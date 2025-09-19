@@ -9,7 +9,7 @@ import { Navigation } from 'swiper/modules';
 
 const HomeSlider = () => {
   return (
-    <div className="homeSlider">
+    <div className="homeSlider mt-4">
         <div className="container">
 
             <Swiper spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
