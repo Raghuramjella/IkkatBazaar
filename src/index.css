@@ -12,6 +12,7 @@ body {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 .container {
   width:90%;
@@ -27,3 +28,7 @@ body {
 .MuiBadge-badge{
     background-color: #ff5252 !important;
 }
+
+.mySwiper{
+    overflow: inherit !important;
+    }
