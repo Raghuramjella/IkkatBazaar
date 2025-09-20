@@ -5,8 +5,6 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { PiSmileyStickerFill } from "react-icons/pi";
 import ProductSlider from '../../components/ProductSlider';
 
-
-
 const Home = () => {
   return (
     <>
@@ -24,11 +22,10 @@ const Home = () => {
         </div>
       </section>
 
-
       <section className="py-5 bg-white mt-5">
         <div className="container">
           <div className='freeShipping w-full p-4 border-[1px] border-black flex items-center justify-between rounded-md mb-5'>
-            <div className=' col1 flex items-center gap-5'>
+            <div className='col1 flex items-center gap-5'>
               <LiaShippingFastSolid className='text-[50px]'/>
               <span className='text-[20px] font-[700] uppercase'>Free Shipping</span>
             </div>
@@ -40,12 +37,12 @@ const Home = () => {
             <PiSmileyStickerFill className='text-[50px]'/>
           </div>
         </div>
-
       </section>
-      <br/><br/><br/><br/><br/>
+
+      {/* Instead of multiple <br/>, better to use Tailwind spacing */}
+      <div className="mt-16"></div>
 
       <Footer/>
-
     </>
   )
 }
