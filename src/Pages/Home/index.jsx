@@ -2,12 +2,25 @@ import React from 'react'
 import HomeSlider from '../../components/HomeSlider'
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { PiSmileyStickerFill } from "react-icons/pi";
+import ProductSlider from '../../components/ProductSlider';
 
 
 const Home = () => {
   return (
     <>
       <HomeSlider/>  
+
+      <section className='bg-white py-8'>
+        <div className="container">
+          <div className='flex items-center justify-between'>
+            <div className='lestsec'>
+              <h2 className='text-[30px] font-[600]'>Popular Products</h2>
+              <p className='text-[14px]'>Don't miss the Current Offers</p>
+            </div>
+          </div>
+          <ProductSlider items={6}/>
+        </div>
+      </section>
 
       <section className="py-5 bg-white mt-5">
         <div className="container">

@@ -1,0 +1,12 @@
+.productItem .title{
+    line-height: 20px;
+}
+
+.productItem .actions button {
+    transition: background 0.3s, color 0.3s;
+}
+
+.productItem .actions button .text-black,
+.productItem .actions button .text-white {
+    transition: color 0.3s;
+}
