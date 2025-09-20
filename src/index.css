@@ -32,3 +32,8 @@ body {
 .mySwiper{
     overflow: inherit !important;
     }
+
+    .productSlider .swiper-wrapper{
+        padding:15px;
+        margin-left: -15px;;
+    }
