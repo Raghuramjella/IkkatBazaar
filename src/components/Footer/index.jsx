@@ -46,7 +46,7 @@ const Footer = () => {
     <div>
       <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
       <p className="text-gray-600">📍 Address: IkkatBazaar HQ, Hyderabad, India</p>
-      <p className="text-gray-600">📞 Phone: +91-94943832XX</p>
+      <p className="text-gray-600">📞 Phone: +91-9494383217</p>
       <p className="text-gray-600">📧 Email: support@ikkatbazaar.com</p>
       
       <div className="flex space-x-4 mt-4">
