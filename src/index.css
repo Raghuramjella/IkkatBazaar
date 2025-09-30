@@ -19,6 +19,18 @@ body {
   margin:auto;
 }
 
+.btn-org{
+    background: #ff5252 !important;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px !important;
+}
+.btn-org:hover{
+    background: #000000 !important;
+    color: #fff !important;
+}
+
 
 
 .link:hover {
@@ -37,3 +49,16 @@ body {
         padding:15px;
         margin-left: -15px;;
     }
+
+.MuiCheckbox-root{
+    padding:6px !important;
+}
+
+.ItemViewActions button.active svg{
+    color: #ff5252 !important;
+}
+
+.Mui-selected.MuiPaginationItem-page{
+    background-color: #ff5252 !important;
+    color: #fff !important;
+}

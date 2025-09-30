@@ -24,6 +24,44 @@ const Home = () => {
         </div>
       </section>
 
+      <section className='bg-white py-8'>
+        <div className="container">
+          <div className='flex items-center justify-between'>
+            <div className='lestsec'>
+              <h2 className='text-[30px] font-[600]'>Silk Sarees</h2>
+              <p className='text-[14px]'>Don't miss the Current Offers</p>
+            </div>
+          </div>
+          <ProductSlider items={6}/>
+        </div>
+      </section>
+
+      <section className='bg-white py-8'>
+        <div className="container">
+          <div className='flex items-center justify-between'>
+            <div className='lestsec'>
+              <h2 className='text-[30px] font-[600]'>Duppattas</h2>
+              <p className='text-[14px]'>Don't miss the Current Offers</p>
+            </div>
+          </div>
+          <ProductSlider items={6}/>
+        </div>
+      </section>
+
+      <section className='bg-white py-8'>
+        <div className="container">
+          <div className='flex items-center justify-between'>
+            <div className='lestsec'>
+              <h2 className='text-[30px] font-[600]'>Fabrics</h2>
+              <p className='text-[14px]'>Don't miss the Current Offers</p>
+            </div>
+          </div>
+          <ProductSlider items={6}/>
+        </div>
+      </section>
+
+
+
       <section className="py-5 bg-white mt-5">
         <div className="container">
           <div className='freeShipping w-full p-4 border-[1px] border-black flex items-center justify-between rounded-md mb-5'>
