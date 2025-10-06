@@ -30,6 +30,11 @@ body {
     padding: 10px 20px !important;
 }
 
+.btn-lg{
+    font-size: 18px !important;
+    padding: 10px  !important;
+}
+
 .btn-org:hover {
     background: #000000 !important;
     color: #fff !important;

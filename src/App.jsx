@@ -14,6 +14,8 @@ import Slide from '@mui/material/Slide';
 import ProductZoom from './components/ProductZoom';
 import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from './components/productDetails'
+import Login from './Pages/Login'
+import Register from './Pages/Register'
 
 const MyContext = createContext();
 
@@ -24,12 +26,9 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 function App() {
   const [openProductDetails1, setOpenProductDetails1] = React.useState(false);
-  const [maxWidth, setMaxWidth] = React.useState('lg');
-  const [fullWidth, setFullWidth] = React.useState(true);
+  const [maxWidth,] = React.useState('lg');
+  const [fullWidth,] = React.useState(true);
 
-  const handleClickOpenProductDetails1 = () => {
-    setOpenProductDetails1(true);
-  };
 
   const handleCloseProductDetails1 = () => {
     setOpenProductDetails1(false);
@@ -48,6 +47,8 @@ function App() {
             <Route path='/' exact={true} element={<Home />} />
             <Route path='/productListing' exact={true} element={<ProductListing />} />
             <Route path='/product/:id' exact={true} element={<Product />} />
+            <Route path='/login' exact={true} element={<Login />} />
+            <Route path='/register' exact={true} element={<Register />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
