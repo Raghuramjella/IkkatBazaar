@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./style.css";
 import Rating from '@mui/material/Rating';
 import { Button } from '@mui/material';
 import { CiHeart } from "react-icons/ci";
 import { FaEye } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
+import { MyContext } from '../../App';
 
 const ProductItem = () => {
+
+    const context = useContext(MyContext);
+
   return (
     <div className='productItem rounded-md shadow-lg overflow-hidden border-2 border-[rgba(0,0,0,0.1)] relative'>
         <div className='group imagewrap w-[100%]  rounded-md border-2 border-[rgba(0,0,0,0.1)]'>
@@ -18,7 +22,7 @@ const ProductItem = () => {
             <span className='discount flex items-center absolute top-[10px] left-[10px] z-50 bg-primary text-white rounded-lg text-[12px] p-1'>20%</span>
 
             <div className='actions absolute transition-all top-[-120px] right-[15px] z-50 flex items-center gap-1 flex-col w-[30px] group-hover:top-[15px]'>
-                <Button className='!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !bg-white hover:!bg-primary hover:text-white group'>
+                <Button className='!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !bg-white hover:!bg-primary hover:text-white group' onClick={() => {context.setOpenProductDetails1(true)}}>
                     <FaEye className='text-[18px] text-black hover:text-white'/>
                 </Button>
 
