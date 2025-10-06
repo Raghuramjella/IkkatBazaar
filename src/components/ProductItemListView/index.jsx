@@ -39,7 +39,7 @@ const ProductItemListView = () => {
 
         <div className='info p-3 bg-gray-300 w-[75%] px-8 mb-3 mt-2'>
             <h6 className='text-[15px]'><a href='/' className='link transition-all'>hello mobile</a></h6>
-            <h3 className='text-[18px] title mt-3 mb-3 font-[500] text-[rgba(0,0,0,0.9)] mb-1'><a href="/" className='link transition-all'>Its a good mobile made by me brohggk</a></h3>
+            <h3 className='text-[18px] title mt-3 mb-4 font-[500] text-[rgba(0,0,0,0.9)]'><a href="/" className='link transition-all'>Its a good mobile made by me brohggk</a></h3>
             <p className='text-[14px] mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium ducimus vero magni nam minus atque, totam nisi delectus exercitationem sapiente unde! Iure saepe fuga voluptatem? Saepe reiciendis tempora tenetur.</p>
             <Rating name="size-small" defaultValue={2} size='small' readOnly/>
 
