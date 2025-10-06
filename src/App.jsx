@@ -16,6 +16,9 @@ import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from './components/productDetails'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
+import Verify from './Pages/Verify'
+import toast, { Toaster } from 'react-hot-toast';
+import Forgot_Password from './Pages/ForgotPassword'
 
 const MyContext = createContext();
 
@@ -34,9 +37,20 @@ function App() {
     setOpenProductDetails1(false);
   };
 
+  const openAlertBox =(status, msg) => {
+    if(status ==="success"){
+      toast.success(msg);
+    }
+    if(status ==="error"){
+      toast.error(msg);
+    }
+  }
+
   const values = {
-    setOpenProductDetails1
+    setOpenProductDetails1,
+    openAlertBox
   };
+
 
   return (
     <>
@@ -49,10 +63,14 @@ function App() {
             <Route path='/product/:id' exact={true} element={<Product />} />
             <Route path='/login' exact={true} element={<Login />} />
             <Route path='/register' exact={true} element={<Register />} />
+            <Route path="/verify" exact={true} element={<Verify/>} />
+            <Route path="/forgot-password" exact={true} element={<Forgot_Password/>} />
           </Routes>
           <Footer />
         </MyContext.Provider>
       </BrowserRouter>
+
+      <Toaster />
 
 
       <Dialog

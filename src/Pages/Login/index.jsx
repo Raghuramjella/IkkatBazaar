@@ -1,13 +1,30 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
+import { CgPassword } from 'react-icons/cg';
+import { useNavigate } from 'react-router-dom';
+import { MyContext } from '../../App';
 
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const [formFields, setformFields] = useState({
+        email:"",
+        password:""
+    });
+    const context = useContext(MyContext);
+
+    const history = useNavigate();
+
+    const forgotPassword =()=>{
+           
+            context.openAlertBox("success","OTP Sent");
+            history("/verify");
+    
+    }
     return (
         <section className='section py-10'>
             <div className='container'>
@@ -22,6 +39,7 @@ const Login = () => {
                                 label="Email-Id"
                                 variant="filled"
                                 className='w-full'
+                                name='name'
                             />
                         </div>
 
@@ -32,8 +50,10 @@ const Login = () => {
                                 label="Password"
                                 variant="filled"
                                 className='w-full'
+                                name="password"
                             />
                             <Button
+                                type='submit'
                                 className='!absolute top-[10px] right-[5px] z-50 !w-[35px] !h-[35px] !min-w-[35px] !rounded-full !text-black'
                                 onClick={() => setShowPassword(!showPassword)}
                             >
@@ -44,7 +64,7 @@ const Login = () => {
                         </div>
 
                         <div className='flex items-center justify-between w-full pt-5'>
-                            <a className='link cursor-pointer text-[16px] font-[600]'>Forgot Password?</a>
+                            <a className='link cursor-pointer text-[16px] font-[600]' onClick={forgotPassword}>Forgot Password?</a>
                             <p >Not Registered? <a className='link cursor-pointer text-[16px] font-[600]' href='/register'>Sign Up</a></p>
 
                         </div>
